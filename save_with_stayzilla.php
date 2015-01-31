@@ -58,7 +58,6 @@
                 <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Fill all your details below</h3>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
-
                         <ul class="filter-list">
                             <li class="headingTo">
                                 <input type="text" id="location" placeholder="Which city are you going?" class="searchQuery textBoxBig fadeIn">
