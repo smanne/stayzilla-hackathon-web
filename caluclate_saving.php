@@ -34,7 +34,7 @@ function getSaving($source, $destination){
     $stayzillafare = calculateFare($stayzillaData["distance"]);
     $stayzillaDuration = minToHours(calculateDuration($stayzillaData["distance"]));
     
-    $data_stayzilla = array("distance" => $hotelPrice->hotels[0]->distanceFromLatLong, "duration" => $stayzillaDuration, 
+    $data_stayzilla = array("distance" => $stayzillaData["distance"], "duration" => $stayzillaDuration, 
         "cabFare" => $stayzillafare, "hotelFare" => $Price, "hotelData" => $hotelPrice->hotels[0]);
     
     $responceData = array();
