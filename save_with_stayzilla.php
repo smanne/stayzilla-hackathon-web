@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="result" style="display:none;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box blue">
@@ -160,13 +160,15 @@
         <script src="js/jquery.geocomplete.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
-            $("#location").geocomplete();
+            $("#location").geocomplete().bind("geocode:result", function(event, result){
+                var places = result.formatted_address.split(",");
+                $("#user_destination").attr("placeholder", "Where you are going in "+places[0]);
+                $("#user_source").attr("placeholder", "Where you friend/relatives in "+places[0]);
+          });
 
             
-            $("#location").change(function(){
-                var place = $("#location").val();
-                console.log(place);
-                $("#user_destination").attr("placeholder", "Where you are going in "+place);
+            $("#location").blur(function(){
+                
             });
 
             $("#user_source").geocomplete();
