@@ -87,21 +87,19 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="jumbotron" style="background: #7e4b62;position: relative;margin-top: -30px;">
             <!-- Example row of columns -->
             <div class="row" style="text-align: center">
-                
                 <img src="bootstrap/images/Promo_page.png">
             </div>
-
-            <hr>
-            
-                    <footer>
-                        <p style="text-align: center">&copy; Stayzilla 2014</p>
-                    </footer>
-                
         </div> <!-- /container -->
+        <hr>
+        <div class="container">
 
+            <footer>
+                <p style="text-align: center">&copy; Stayzilla 2015</p>
+            </footer>
+        </div>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
