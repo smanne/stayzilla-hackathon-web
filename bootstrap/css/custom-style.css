@@ -71,3 +71,10 @@ and open the template in the editor.
 -webkit-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
 height: 130px;
 }
+
+#user_cabfare,#user_duration,#user_distance{
+    color:white !important;background: red !important;padding:5px
+}
+#stayzilla_cabfare,#stayzilla_hotelFare,#stayzilla_distance,#stayzilla_duration{
+    color:white !important;background: green !important;padding:5px
+}
