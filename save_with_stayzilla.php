@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="result" style="display:;">
+        <div class="container" id="result" style="display:none;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box blue">
@@ -200,6 +200,7 @@
                     $("#user_cabfare").html(data.user.cabFare);
                     $("#stayzilla_cabfare").html(data.stayzilla.cabFare);
                     $("#stayzilla_hotelFare").html(data.stayzilla.hotelFare);
+                    $("#result").show();
                 })
             })
         </script>
