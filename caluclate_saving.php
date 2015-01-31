@@ -6,12 +6,15 @@
 //Calcuate fare
 //return 
 //hotel price
+header('Content-Type: application/json');
 
 include("geo_calculator.php");
 
 $source = $_GET['usersource'];
 $destination = $_GET['destination'];
-getSaving($source, $destination);
+//var_dump($destination);die;
+
+echo getSaving($source, $destination);
 function getSaving($source, $destination){
     $data = getDistance($source, $destination);
     $fare = calculateFare($data["distance"]);
@@ -20,6 +23,7 @@ function getSaving($source, $destination){
     $start_date = "06/03/2015";
     $end_date = "09/03/2015";
     $hotelPrice = getStayzillahotel($destination, $start_date, $end_date);
+    
     $Price = $hotelPrice->hotels[0]->price;
     $stayzillaSource = $hotelPrice->hotels[0]->address;
     
