@@ -33,7 +33,7 @@ and open the template in the editor.
     text-align: center;
     font-size: 30px
 }
-.queryTextBoxSec input{
+.headingTo input{
     min-width: 250px;padding:10px;
 }
 .stayDetailsSec input{

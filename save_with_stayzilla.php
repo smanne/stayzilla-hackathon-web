@@ -60,7 +60,7 @@
                     <div class="col-md-12" style="text-align: center">
 
                         <ul class="filter-list">
-                            <li class="queryTextBoxSec">
+                            <li class="headingTo">
                                 <input type="text" id="location" placeholder="Which city are you going?" class="searchQuery textBoxBig fadeIn">
                                 <span class="locationIcon"><i class="sp_icon sp_map_marker"></i></span>
                             </li>
@@ -75,6 +75,50 @@
                             </li>
                         </ul>
                         <!-- END FORM-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom:30px">
+            <div class="row">
+                <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
+                    Benifits of Using Stayzilla
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-inr" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Very cost effective</span></li>
+                            <li><i class="fa fa-check"></i><span>Don't depend on anyone</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-clock-o" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Saves a lot of time</span></li>
+                            <li><i class="fa fa-check"></i><span>Suggests various events and economic mode of transportation</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-ambulance" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Covers your accidental damage </span></li>
+                            <li><i class="fa fa-check"></i><span>Ensures your security</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-eye" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Maintain your privacy</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
