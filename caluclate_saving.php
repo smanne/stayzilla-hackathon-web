@@ -28,7 +28,7 @@ function getSaving($source, $destination){
 
     $hotelPrice = getStayzillahotel($geoCordinates[0], $geoCordinates[1], $start_date, $end_date);
     
-    $Price = $hotelPrice->hotels[0]->price;
+    $Price = $hotelPrice->hotels[0]->rawPrice;
     $stayzillaSource = $hotelPrice->hotels[0]->address;
     
     $data_User = array("distance" => $data["distance"], "duration" => $duration, 

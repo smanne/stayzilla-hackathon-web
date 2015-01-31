@@ -118,7 +118,7 @@
                                         <tr>
                                             <td class="center-align"><i class="fa fa-bed" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">Depends on your relative or family member</td>
-                                            <td class="align-vertical center-align"><span id="stayzilla_hotelFare"></span> you need to spend behind the hotel</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> <span id="stayzilla_hotelFare"></span> you need to spend behind the hotel</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-ambulance" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
