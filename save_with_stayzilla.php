@@ -105,16 +105,16 @@
                                         <tr>
                                             <td class="center-align"><i class="fa fa-clock-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">You spend 2 hours</td>
-                                            <td class="align-vertical center-align">You spend 5 hours</td>
+                                            <td class="align-vertical center-align">You spend 1 hour</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-inr" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">100INR you need to spend behind cab</td>
-                                            <td class="align-vertical center-align">200km you need to spend behind cab</td>
+                                            <td class="align-vertical center-align">100 <i class="fa fa-inr"></i> you need to spend behind cab</td>
+                                            <td class="align-vertical center-align">50 <i class="fa fa-inr"></i> you need to spend behind cab</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-home" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">486 INR you need no spend</td>
+                                            <td class="align-vertical center-align">486 <i class="fa fa-inr"></i> you need no spend</td>
                                             <td class="align-vertical center-align">Depends on your relative</td>
                                         </tr>
                                         <tr>
@@ -124,8 +124,8 @@
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-car" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">20km you need to travel</td>
-                                            <td class="align-vertical center-align">10km you need to travel</td>
+                                            <td class="align-vertical center-align">Privacy is ensured</td>
+                                            <td class="align-vertical center-align">Can't ensure about the privacy</td>
                                         </tr>
                                     </tbody>
                                 </table>
