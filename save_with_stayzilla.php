@@ -114,19 +114,19 @@
                                             <td class="align-vertical center-align">50 <i class="fa fa-inr"></i> you need to spend behind cab</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-home" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">486 <i class="fa fa-inr"></i> you need no spend</td>
-                                            <td class="align-vertical center-align">Depends on your relative</td>
+                                            <td class="center-align"><i class="fa fa-hospital-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">Depends on your relative or family member</td>
+                                            <td class="align-vertical center-align">486 <i class="fa fa-inr"></i> you need to spend behind the hotel</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-ambulance" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">Insurance if provided (if applied)</td>
                                             <td class="align-vertical center-align">Doesn't guarantee about the insurance</td>
+                                            <td class="align-vertical center-align">Insurance is provided (if applied)</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-car" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><i class="fa fa-home" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">Privacy can't be ensured</td>
                                             <td class="align-vertical center-align">Privacy is ensured</td>
-                                            <td class="align-vertical center-align">Can't ensure about the privacy</td>
                                         </tr>
                                     </tbody>
                                 </table>
