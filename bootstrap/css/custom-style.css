@@ -20,6 +20,19 @@ and open the template in the editor.
     display: inline-block;
     float: left
 }
+.feature-list{
+    text-align: center;position: relative;left: -15px
+}
+.feature-list li{
+    list-style-type: none;
+    color:#f93f81;
+    margin-bottom: 9px;
+    
+}
+.icon-header-logo{
+    text-align: center;
+    font-size: 30px
+}
 .queryTextBoxSec input{
     min-width: 250px;padding:10px;
 }
@@ -30,13 +43,31 @@ and open the template in the editor.
      min-width: 275px;padding:10px;
 }
 .searchBtn{
-    background:#f93f81;
+    background:#fff;
     border-color: 1px solid #fff;
-    color:white;padding:11px;left:1px;position: relative;border-radius: 0px !important;
+    color:white;
+    padding:11px;
+    left:1px;
+    position: relative;
+    border-radius: 0px !important;
+    border-color: #f93f81;
+    color:#f93f81;transition: all .5s linear;
+}
+.searchBtn:hover{
+    background:#f93f81;
+    color:#fff;
+   // transition-delay:.5s;
 }
 .align-vertical{
     vertical-align: inherit !important;
 }
 .center-align{
     text-align: center !important;
+}
+.box-description{
+    box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+-moz-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+-o-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+-webkit-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+height: 130px;
 }
