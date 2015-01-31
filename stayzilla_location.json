@@ -1,0 +1,59 @@
+[{
+        "location": {
+            "bangalore":
+                    [
+                        {
+                            "near_address": "Outer ring road",
+                            "hotel_name": "Wifi Enabled Value Serviced Apartments",
+                            "address":"Marathahalli Outer Ring Roads",
+                            "travelling_time": "0.20 Hr",
+                            "distance": "3.04KM",
+                            "price": "INR 1500",
+                            "fares": {
+                                "by_cab": "INR 50",
+                                "by_bus": "INR 10",
+                                "by_autorickhaw": "INR 20"
+                            }
+                        },
+                        {
+                            "near_address": "Outer ring road",
+                            "address":"447/22, Bellandur Circle, Nearby Ecospace IT Park",
+                            "hotel_name": "Hotel Sri Krishna Suites",
+                            "travelling_time": "0.15 Hr",
+                            "distance": "1.04KM",
+                            "price": "INR 1000",
+                            "fares": {
+                                "by_cab": "INR 50",
+                                "by_bus": "INR 10",
+                                "by_autorickhaw": "INR 20"
+                            }
+                        }
+                    ],
+            "delhi":
+                    {
+                        "source_address": "Model Town",
+                        "distination_address": "12/22 sector,Noida",
+                        "travelling_time": "3 hrs",
+                        "distance": "35KM",
+                        "fares": {
+                            "by_cab": "1200 INR",
+                            "by_bus": "100INR",
+                            "by_autorickhaw": "500 INR"
+                        }
+                    },
+            "Mumbai":
+                    {
+                        "source_address": "Airport",
+                        "distination_address": "Parwell",
+                        "travelling_time": "2-3 hrs",
+                        "distance": "30KM",
+                        "fares": {
+                            "by_cab": "1000 INR",
+                            "by_bus": "200 INR",
+                            "by_autorickhaw": "500 INR"
+                        }
+                    }
+        }
+
+    }]
+

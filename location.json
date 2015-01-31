@@ -1,0 +1,53 @@
+[{
+        "location": {
+            "bangalore":
+                    [{
+                        "source_address": "Jeevanbhima Nagar",
+                        "distination_address": "Outer ring road",
+                        "travelling_time":"1.5 hrs",
+                        "distance":"15KM",
+                        "fares": {
+                            "by_cab": "150INR" ,
+                            "by_bus":"70INR" ,
+                            "by_autorickhaw": "140INR"
+                        }
+                    },
+                    {
+                        "source_address": "Outer ring road",
+                        "distination_address": "Outer ring road",
+                        "travelling_time":"1.5 hrs",
+                        "distance":"15KM",
+                        "fares": {
+                            "by_cab": "150INR" ,
+                            "by_bus":"70INR" ,
+                            "by_autorickhaw": "140INR"
+                        }
+                    }
+                    ],
+            "delhi":
+                    {
+                        "source_address": "Model Town",
+                        "distination_address": "12/22 sector,Noida",
+                        "travelling_time":"3 hrs",
+                        "distance":"35KM",
+                        "fares": {
+                            "by_cab": "1200 INR" ,
+                            "by_bus":"100INR" ,
+                            "by_autorickhaw": "500 INR"
+                        }
+                    },
+            "Mumbai":
+                    {
+                        "source_address": "Airport",
+                        "distination_address": "Parwell",
+                        "travelling_time":"2-3 hrs",
+                        "distance":"30KM",
+                        "fares": {
+                            "by_cab": "1000 INR" ,
+                            "by_bus":"200 INR" ,
+                            "by_autorickhaw": "500 INR"
+                        }
+                    }        
+        }
+
+    }]

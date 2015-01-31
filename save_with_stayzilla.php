@@ -8,8 +8,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
-
-        <title>Jumbotron Template for Bootstrap</title>
+        <link rel="stylesheet" href="bootstrap/font-awesome-4.3.0/css/font-awesome.min.css"
+              <title>Jumbotron Template for Bootstrap</title>
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -76,22 +76,80 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portlet box blue">
+                        <div class="portlet-title">
+                            <div class="caption" style="color:#f93f81;font-size: 19px;text-align: center;margin-bottom: 10px">
+                                Benifits of using the Stayzilla App
+                            </div>
+
+                        </div>
+                        <div class="portlet-body">
+                            <div class="table-responsive">
+                                <table class="table table-condensed table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="text-align: center">Features</th>
+                                            <th style="text-align: center">If you go with your choice</th>
+                                            <th style="text-align: center">If you go with Stayzilla</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="center-align"><i class="fa fa-car" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">20km you need to travel</td>
+                                            <td class="align-vertical center-align">10km you need to travel</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center-align"><i class="fa fa-clock-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">You spend 2 hours</td>
+                                            <td class="align-vertical center-align">You spend 5 hours</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center-align"><i class="fa fa-inr" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">100INR you need to spend behind cab</td>
+                                            <td class="align-vertical center-align">200km you need to spend behind cab</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center-align"><i class="fa fa-home" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">486 INR you need no spend</td>
+                                            <td class="align-vertical center-align">Depends on your relative</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center-align"><i class="fa fa-ambulance" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">Insurance if provided (if applied)</td>
+                                            <td class="align-vertical center-align">Doesn't guarantee about the insurance</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center-align"><i class="fa fa-car" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="align-vertical center-align">20km you need to travel</td>
+                                            <td class="align-vertical center-align">10km you need to travel</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="jumbotron" style="background: #7e4b62;position: relative;margin-top: -30px;">
             <!-- Example row of columns -->
             <div class="row" style="text-align: center">
-                
                 <img src="bootstrap/images/Promo_page.png">
             </div>
-
-            <hr>
-            
-                    <footer>
-                        <p style="text-align: center">&copy; Stayzilla 2014</p>
-                    </footer>
-                
         </div> <!-- /container -->
+        
+        <hr>
+        <div class="container">
 
+            <footer>
+                <p style="text-align: center">&copy; Stayzilla 2015</p>
+            </footer>
+        </div>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
