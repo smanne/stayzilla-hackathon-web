@@ -162,7 +162,7 @@
             <div class="row" id="devoloped_by">
                 <div class="col-md-12" style="text-align: center">
                     <img src="bootstrap/images/bhack.png" style="width:90px;height:75px"><br>
-                    <h3>The Blackhacks</h3>
+                    <h3>The Black Hat</h3>
                 </div>
                 <div class="col-lg-4" style="text-align: center">
                     <img class="img-circle" src="bootstrap/images/sandeep.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
