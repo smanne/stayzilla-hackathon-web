@@ -11,3 +11,26 @@ and open the template in the editor.
 .logo-stayzilla{
     margin-top: -15px !important
 }
+.filter-list{
+    list-style-type: none;
+    display: inline-block;
+}
+.filter-list li{
+    list-style-type: none;
+    display: inline-block;
+    float: left
+}
+.queryTextBoxSec input{
+    min-width: 250px;padding:10px
+}
+.stayDetailsSec input{
+    min-width: 250px;padding:10px
+}
+.purposeVisit input{
+     min-width: 250px;padding:10px
+}
+.searchBtn{
+    background:#f93f81;
+    border-color: 1px solid #fff;
+    color:white;padding:10px
+}

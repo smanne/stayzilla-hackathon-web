@@ -62,9 +62,30 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                <h1 style="text-align: center;font-family: sans-serif;font-weight: normal">Please do fill your requirement</h1>
+                <div class="portlet-body form">
+                    <div class="col-md-12" style="text-align: center">
+
+                        <ul class="filter-list">
+                            <li class="queryTextBoxSec">
+                                <input type="text" id="autocomplete_poi" placeholder="Where do you want to stay?" class="searchQuery textBoxBig fadeIn" autocomplete="off">
+                                <span class="locationIcon"><i class="sp_icon sp_map_marker"></i></span>
+                            </li>
+                            <li class="stayDetailsSec ">
+                                <input type="text"  placeholder="Planning to stay at" id="checkin" autocomplete="off" class="">
+                                <span class="calendarIcon"><i class="sp_icon sp_calendar"></i></span>
+                            </li>
+                            <li class="purposeVisit">
+                                <input type="text"  placeholder="Purpose Of Visit" id="checkout" autocomplete="off" class="">
+                                <span class="calendarIconTwo"><i class=""></i></span>
+                            </li>
+                            <li class="pull-left">
+                                <input type="button" value="SEARCH" class="btn searchBtn" id="search_button">
+                            </li>
+                        </ul>
+                        <!-- END FORM-->
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -89,10 +110,13 @@
             </div>
 
             <hr>
-
-            <footer>
-                <p>&copy; Company 2014</p>
-            </footer>
+            <div class="row" style="background: #aaa;position: fixed;bottom: 0px;text-align: center">
+                <div class="col-md-12">
+                    <footer>
+                        <p>&copy; Company 2014</p>
+                    </footer>
+                </div>
+            </div>
         </div> <!-- /container -->
 
 
