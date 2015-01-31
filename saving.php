@@ -60,9 +60,10 @@ class StayZillaComparison {
     public function getStayzillahotel($lat, $lng, $start_date, $end_date) {
         $url = 'http://180.92.168.7/hotels';
         $fields = array(
-            'location' => urlencode($destination_address),
+            
             'checkin' => urlencode($start_date),
             'checkout' => urlencode($end_date),
+            'property_type'=>'Hotels',
             'lat'=>$lat,
             'lng'=>$lng
         );
@@ -110,6 +111,7 @@ $city = 'bangalore';
 echo $testObject->doCompare($source_address, $destination_address, $city);
 $start_date='06/03/2015';
 $end_date='09/03/2015';
-$lat='';
-$lng='';
+$lat='11.41';
+$lng='76.70';
+
 echo $testObject->getStayzillahotel($lat,$lng, $start_date, $end_date);
