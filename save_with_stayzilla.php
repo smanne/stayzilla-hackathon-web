@@ -161,7 +161,7 @@
         <div class="container">
             <div class="row" id="devoloped_by">
                 <div class="col-md-12" style="text-align: center">
-                    <img src="bootstrap/images/bhack.png" style="width:90px;height:75px"><br>
+                    <img src="bootstrap/images/bhat.png" style="width:90px;height:75px"><br>
                     <h3>The Black Hat</h3>
                 </div>
                 <div class="col-lg-4" style="text-align: center">
