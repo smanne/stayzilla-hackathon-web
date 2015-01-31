@@ -114,7 +114,7 @@
                                             <td class="align-vertical center-align">50 <i class="fa fa-inr"></i> you need to spend behind cab</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-hospital-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><i class="fa fa-bed" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">Depends on your relative or family member</td>
                                             <td class="align-vertical center-align">486 <i class="fa fa-inr"></i> you need to spend behind the hotel</td>
                                         </tr>
@@ -135,12 +135,23 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="margin-bottom:20px">
+                
+                    <div class="col-md-10">
+                        <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
+                        --><p>put something here</p>
+                        </div>
+                    <div class="col-md-2">
+                        <input type="button" value="Show Places" class="btn searchBtn" id="search_button" style="width:100%">
+                    </div>
+               
+            </div>
         </div>
         <br>
         <div class="jumbotron" style="background: #7e4b62;position: relative;margin-top: -30px;">
             <!-- Example row of columns -->
             <div class="row" style="text-align: center">
-                <img src="bootstrap/images/Promo_page.png">
+                <img src="bootstrap/images/Promo_page_2.png">
             </div>
         </div> <!-- /container -->
         
