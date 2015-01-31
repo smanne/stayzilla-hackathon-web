@@ -52,20 +52,21 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Please fill in following details to know how you can benefit with stayzilla</h3>
+                <h2 style="text-align: center;font-family: sans-serif;font-weight: normal">Why stay with Friends/Relatives when you can get benifit with stayzilla</h2>
+                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Please fill in following details</h3>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
 
                         <ul class="filter-list">
                             <li class="queryTextBoxSec">
-                                <input type="text" id="location" placeholder="Where do you want to stay?" class="searchQuery textBoxBig fadeIn">
+                                <input type="text" id="location" placeholder="Which city you are going?" class="searchQuery textBoxBig fadeIn">
                                 <span class="locationIcon"><i class="sp_icon sp_map_marker"></i></span>
                             </li>
                             <li class="stayDetailsSec ">
-                                <input type="text"  placeholder="Planning to stay at" id="user_source" class="">
+                                <input type="text"  placeholder="Where is your friend/relatives" id="user_source" class="">
                             </li>
                             <li class="purposeVisit">
-                                <input type="text"  placeholder="Where you are going in " id="user_destination" class="">
+                                <input type="text"  placeholder="Which place you are going in " id="user_destination" class="">
                             </li>
                             <li class="pull-left">
                                 <input type="button" value="Show my benefits" class="btn searchBtn" id="search_button">
@@ -155,7 +156,7 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="js/jquery.geocomplete.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
@@ -163,8 +164,9 @@
 
             
             $("#location").change(function(){
-                var place = $("#location").val().split(",");
-                $("#user_destination").attr("placeholder", "Where you are going in "+place[0]);
+                var place = $("#location").val();
+                console.log(place);
+                $("#user_destination").attr("placeholder", "Where you are going in "+place);
             });
 
             $("#user_source").geocomplete();
