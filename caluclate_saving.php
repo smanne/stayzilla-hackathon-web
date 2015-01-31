@@ -35,10 +35,11 @@ function getSaving($source, $destination){
         "cabFare" => $fare);
     
     $stayzillaData = getDistance($stayzillaSource, $destination);
-    $stayzillafare = calculateFare(floor($hotelPrice->hotels[0]->distanceFromLatLong / 1000));
-    $stayzillaDuration = minToHours(calculateDuration(floor($hotelPrice->hotels[0]->distanceFromLatLong / 1000)));
+    $stayZillaDistance = number_format((float)$hotelPrice->hotels[0]->distanceFromLatLong / 1000, 2, '.', ''); 
+    $stayzillafare = calculateFare($stayZillaDistance);
+    $stayzillaDuration = minToHours(calculateDuration($stayZillaDistance));
     
-    $data_stayzilla = array("distance" => floor($hotelPrice->hotels[0]->distanceFromLatLong / 1000)." km", "duration" => $stayzillaDuration, 
+    $data_stayzilla = array("distance" => $stayZillaDistance." km", "duration" => $stayzillaDuration, 
         "cabFare" => $stayzillafare, "hotelFare" => $Price, "hotelData" => $hotelPrice->hotels[0]);
     
     $responceData = array();
