@@ -138,10 +138,11 @@
             <div class="row" style="margin-bottom:20px">
                 
                     <div class="col-md-10">
-                        <input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
-                    </div>
+                        <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
+                        --><p>put something here</p>
+                        </div>
                     <div class="col-md-2">
-                        <input type="button" value="Show Places" class="btn searchBtn" id="search_button">
+                        <input type="button" value="Show Places" class="btn searchBtn" id="search_button" style="width:100%">
                     </div>
                
             </div>
