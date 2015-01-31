@@ -32,7 +32,7 @@ and open the template in the editor.
 .searchBtn{
     background:#f93f81;
     border-color: 1px solid #fff;
-    color:white;padding:11px;left:1px;position: relative
+    color:white;padding:11px;left:1px;position: relative;border-radius: 0px !important;
 }
 .align-vertical{
     vertical-align: inherit !important;
