@@ -183,12 +183,12 @@
             </div>
             <div class="row" style="margin-bottom:20px;color:#FF4081;">
 
-                <div class="col-md-3">
+                <div class="col-md-3" style="text-align: center">
                     <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
-                    --><h3 style="position:relative;top:-9px;text-align:right;font-size: 16px">Want more reason to chose us?</h3></div>
+                    --><h3 style="position:relative;top:-9px;font-size: 16px">Want more reason to chose us?</h3></div>
                 <div class="col-md-7"> <input type="button" value="Search Nearby Attractions" class="btn searchBtn" id="search_nearby_button" style="width:100%;background: #fff"> 
                 </div>
-                <div class="col-md-2"><h3 style="position:relative;top:-9px;font-size: 16px">to your hotel.</h3></div>
+                <div class="col-md-2" style="text-align: center"><h3 style="position:relative;top:-9px;font-size: 16px">to your hotel.</h3></div>
 
             </div>
             <div class="row" id="nearby-results"></div>
