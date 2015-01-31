@@ -135,12 +135,22 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="margin-bottom:20px">
+                
+                    <div class="col-md-10">
+                        <input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="button" value="Show Places" class="btn searchBtn" id="search_button">
+                    </div>
+               
+            </div>
         </div>
         <br>
         <div class="jumbotron" style="background: #7e4b62;position: relative;margin-top: -30px;">
             <!-- Example row of columns -->
             <div class="row" style="text-align: center">
-                <img src="bootstrap/images/Promo_page.png">
+                <img src="bootstrap/images/Promo_page_2.png">
             </div>
         </div> <!-- /container -->
         
