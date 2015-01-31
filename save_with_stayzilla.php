@@ -183,10 +183,7 @@
             });
 
             $("#user_source").geocomplete();
-            var destination_latitude = "";
-            $("#user_destination").geocomplete().bind("geocode:result", function(event, result){
-                console.log(result.address_components.geometry.location);
-            });
+            $("#user_destination").geocomplete();
             $("#search_nearby_button").click(function(){
                service = new google.maps.places.PlacesService(map);
                service.nearbySearch(request, callback);
