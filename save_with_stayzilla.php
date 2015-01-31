@@ -114,7 +114,7 @@
                                             <td class="align-vertical center-align">50 <i class="fa fa-inr"></i> you need to spend behind cab</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-hospital-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><i class="fa fa-bed" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">Depends on your relative or family member</td>
                                             <td class="align-vertical center-align">486 <i class="fa fa-inr"></i> you need to spend behind the hotel</td>
                                         </tr>
