@@ -79,55 +79,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-        <div class="container" id="result" style="display:none;">
-=======
-        <div class="container" style="margin-bottom:30px">
-            <div class="row">
-                <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
-                    Benifits of Using Stayzilla
-                </div>
-                <div class="col-md-12">
-                    <div class="col-md-3 col-xs-12 box-description">
-                        <div class="icon-header-logo" style="margin-top:10px">
-                            <i class="fa fa-dollar" style=""></i>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fa fa-check"></i><span>Very cost effective</span></li>
-                            <li><i class="fa fa-check"></i><span>Don't depend on anyone</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-xs-12 box-description">
-                        <div class="icon-header-logo" style="margin-top:10px">
-                            <i class="fa fa-clock-o" style=""></i>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fa fa-check"></i><span>Saves a lot of time</span></li>
-                            <li><i class="fa fa-check"></i><span>Suggests economic mode of transportation</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-xs-12 box-description">
-                        <div class="icon-header-logo" style="margin-top:10px">
-                            <i class="fa fa-ambulance" style=""></i>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fa fa-check"></i><span>Covers your accidental damage </span></li>
-                            <li><i class="fa fa-check"></i><span>Ensures your security</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-xs-12 box-description">
-                        <div class="icon-header-logo" style="margin-top:10px">
-                            <i class="fa fa-eye" style=""></i>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fa fa-check"></i><span>Maintain your privacy</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container" id="result">
->>>>>>> 8629711ecb62273781ec68c3c94bc7884454b6c7
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box blue">
