@@ -159,14 +159,16 @@
         <script src="js/jquery.geocomplete.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
-            $("#location").geocomplete()
+            $("#location").geocomplete();
 
             
             $("#location").change(function(){
-                $("#user_destination").attr("placeholder", "Where you are going in "+$("#location").val());
+                var place = $("#location").val().split(",");
+                $("#user_destination").attr("placeholder", "Where you are going in "+place[0]);
             });
 
-        
+            $("#user_source").geocomplete();
+            $("#user_destination").geocomplete();
         </script>
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
