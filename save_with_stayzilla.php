@@ -45,15 +45,21 @@
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                </div><!--/.navbar-collapse -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://www.stayzilla.com/contactus">Contact Us</a></li>
+                        <li><a href="http://www.stayzilla.com/aboutus">About Us</a></li>
+
+                    </ul>
+
+                </div>
             </div>
         </nav>
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h2 style="text-align: center;font-family: sans-serif;font-weight: normal">Why stay with Friends/Relatives when you can get benifit with stayzilla</h2>
-                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Please fill in following details</h3>
+                <h2 style="text-align: center;font-family: sans-serif;font-weight: normal">Why depend on friends/relatives when you can get benefits of Stayzilla !!!</h2>
+                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Fill all your details below</h3>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
 
@@ -77,13 +83,58 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="result" style="display:;">
+        <div class="container" style="margin-bottom:30px">
+            <div class="row">
+                <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
+                                Benifits of Using Stayzilla
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-dollar" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Very cost effective</span></li>
+                            <li><i class="fa fa-check"></i><span>Don't depend on anyone</span></li>
+                        </ul>
+                    </div>
+                     <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-clock-o" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Saves a lot of time</span></li>
+                            <li><i class="fa fa-check"></i><span>Suggests economic mode of transportation</span></li>
+                        </ul>
+                    </div>
+                     <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-ambulance" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Covers your accidental damage </span></li>
+                            <li><i class="fa fa-check"></i><span>Ensures your security</span></li>
+                        </ul>
+                    </div>
+                     <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-eye" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Maintain your privacy</span></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="result">
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box blue">
                         <div class="portlet-title">
-                            <div class="caption" style="color:#f93f81;font-size: 19px;text-align: center;margin-bottom: 10px">
-                                Benifits of Stayzilla
+                            <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
+                                Check out a Live Scenario
                             </div>
 
                         </div>
@@ -136,14 +187,14 @@
                 </div>
             </div>
             <div class="row" style="margin-bottom:20px;color:#FF4081;">
-                
-                    <div class="col-md-3">
-                        <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
-                        --><h3 style="position:relative;top:-9px;text-align:right;">Want more reasons</h3></div>
+
+                <div class="col-md-3">
+                    <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
+                    --><h3 style="position:relative;top:-9px;text-align:right;font-size: 16px">Want more reason to chose us?</h3></div>
                 <div class="col-md-7"> <input type="button" value="Search Nearby Attractions" class="btn searchBtn" id="search_nearby_button" style="width:100%"> 
-                    </div>
-                   <div class="col-md-2"><h3 style="position:relative;top:-9px;">to your hotel.</h3></div>
-               
+                </div>
+                <div class="col-md-2"><h3 style="position:relative;top:-9px;font-size: 16px">to your hotel.</h3></div>
+
             </div>
             <div class="row" id="nearby-results"></div>
         </div>
@@ -154,7 +205,7 @@
                 <img src="bootstrap/images/Promo_page_2.png">
             </div>
         </div> <!-- /container -->
-        
+
         <hr>
         <div class="container">
 
@@ -171,25 +222,25 @@
         <script src="js/jquery.geocomplete.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
-            $("#location").geocomplete().bind("geocode:result", function(event, result){
+            $("#location").geocomplete().bind("geocode:result", function (event, result) {
                 var places = result.formatted_address.split(",");
-                $("#user_destination").attr("placeholder", "Where you are going in "+places[0]);
-                $("#user_source").attr("placeholder", "Where you friend/relatives in "+places[0]);
-          });
+                $("#user_destination").attr("placeholder", "Where you are going in " + places[0]);
+                $("#user_source").attr("placeholder", "Where you friend/relatives in " + places[0]);
+            });
 
-            
-            $("#location").blur(function(){
-                
+
+            $("#location").blur(function () {
+
             });
 
             $("#user_source").geocomplete();
             $("#user_destination").geocomplete();
-            $("#search_nearby_button").click(function(){
-               service = new google.maps.places.PlacesService(map);
-               service.nearbySearch(request, callback);
-                
+            $("#search_nearby_button").click(function () {
+                service = new google.maps.places.PlacesService(map);
+                service.nearbySearch(request, callback);
+
             });
-            
+
             function callback(results, status) {
                 console.log(results);
             }
