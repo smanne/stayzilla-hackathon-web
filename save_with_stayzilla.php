@@ -18,7 +18,6 @@
 
         <!-- Custom styles for this template -->
         <link href="jumbotron.css" rel="stylesheet">
-
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -46,15 +45,6 @@
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" placeholder="Email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Password" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-success">Sign in</button>
-                    </form>
                 </div><!--/.navbar-collapse -->
             </div>
         </nav>
@@ -62,23 +52,23 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 style="text-align: center;font-family: sans-serif;font-weight: normal">Please fill in following details to know how you can save with stayzilla</h1>
+                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Please fill in following details to know how you can benefit with stayzilla</h3>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
 
                         <ul class="filter-list">
                             <li class="queryTextBoxSec">
-                                <input type="text" id="autocomplete_poi" placeholder="Where do you want to stay?" class="searchQuery textBoxBig fadeIn" autocomplete="off">
+                                <input type="text" id="location" placeholder="Where do you want to stay?" class="searchQuery textBoxBig fadeIn">
                                 <span class="locationIcon"><i class="sp_icon sp_map_marker"></i></span>
                             </li>
                             <li class="stayDetailsSec ">
-                                <input type="text"  placeholder="Planning to stay at" id="checkin" autocomplete="off" class="">
+                                <input type="text"  placeholder="Planning to stay at" id="user_source" class="">
                             </li>
                             <li class="purposeVisit">
-                                <input type="text"  placeholder="Which place you are going to in " id="checkout" autocomplete="off" class="">
+                                <input type="text"  placeholder="Where you are going in " id="user_destination" class="">
                             </li>
                             <li class="pull-left">
-                                <input type="button" value="Show my savings" class="btn searchBtn" id="search_button">
+                                <input type="button" value="Show my benefits" class="btn searchBtn" id="search_button">
                             </li>
                         </ul>
                         <!-- END FORM-->
@@ -106,8 +96,21 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/jquery.geocomplete.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $("#location").geocomplete()
+
+            
+            $("#location").change(function(){
+                $("#user_destination").attr("placeholder", "Where you are going in "+$("#location").val());
+            });
+
+        
+        </script>
+
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
     </body>
