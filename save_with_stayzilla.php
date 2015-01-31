@@ -107,8 +107,8 @@
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-clock-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">You will spend <span id="user_duration"></span> travelling</td>
-                                            <td class="align-vertical center-align">You will spend <span id="stayzilla_duration"></span> travelling</td>
+                                            <td class="align-vertical center-align">You will spend <span id="user_duration"></span> travelling (One way)</td>
+                                            <td class="align-vertical center-align">You will spend <span id="stayzilla_duration"></span> travelling (One way)</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><span><img src="bootstrap/images/cab-fare.png"></span></td>
@@ -148,6 +148,16 @@
 
             </div>
             <div class="row" id="nearby-results"></div>
+        </div>
+        <div class="container" id="no-result" style="display:none;">
+            <div class="row">
+                <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
+                    Sorry we are unable to find best options for you at this time. Please visit us again.
+                </div>
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
         </div>
         <br>
         <div class="jumbotron" style="background: #7e4b62;position: relative;margin-top: -30px;">
@@ -234,16 +244,23 @@
 
             
             $("#search_button").click(function(){
+                $("#result").hide();
+                $("#no-result").hide();
                 $.getJSON("caluclate_saving.php?usersource="+$("#user_source").val()+"&destination="+$("#user_destination").val(), function(data){
                     console.log(data);
                     $("#user_distance").html(data.user.distance);
                     $("#stayzilla_distance").html(data.stayzilla.distance);
+                    if (parseFloat(data.user.distance) < parseFloat(data.stayzilla.distance)) {
+                        $("#no-result").show();
+                    } else {
+                        $("#result").show();    
+                    }
                     $("#user_duration").html(data.user.duration);
                     $("#stayzilla_duration").html(data.stayzilla.duration);
                     $("#user_cabfare").html(data.user.cabFare);
                     $("#stayzilla_cabfare").html(data.stayzilla.cabFare);
                     $("#stayzilla_hotelFare").html(data.stayzilla.hotelFare);
-                    $("#result").show();
+                    
                 })
             })
         </script>
