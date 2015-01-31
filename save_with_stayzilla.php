@@ -77,13 +77,13 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="result" style="display:;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption" style="color:#f93f81;font-size: 19px;text-align: center;margin-bottom: 10px">
-                                Benifits of using the Stayzilla App
+                                Benifits of Stayzilla
                             </div>
 
                         </div>
@@ -100,23 +100,23 @@
                                     <tbody>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-map-marker" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">20km you need to travel</td>
-                                            <td class="align-vertical center-align">10km you need to travel</td>
+                                            <td class="align-vertical center-align">You need to travel <span>20Km</span></td>
+                                            <td class="align-vertical center-align">You need to travel <span>10Km</span></td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-clock-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">You spend 2 hours</td>
-                                            <td class="align-vertical center-align">You spend 1 hour</td>
+                                            <td class="align-vertical center-align">You will spend 2 hours travelling</td>
+                                            <td class="align-vertical center-align">You will spend 1 hours travelling</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><span><img src="bootstrap/images/cab-fare.png"></span></td>
-                                            <td class="align-vertical center-align">100 <i class="fa fa-inr"></i> you need to spend behind cab</td>
-                                            <td class="align-vertical center-align">50 <i class="fa fa-inr"></i> you need to spend behind cab</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> 100 you need to spend behind cab</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> 50  you need to spend behind cab</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-hospital-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><i class="fa fa-bed" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">Depends on your relative or family member</td>
-                                            <td class="align-vertical center-align">486 <i class="fa fa-inr"></i> you need to spend behind the hotel</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> 486 you need to spend behind the hotel</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-ambulance" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
@@ -135,12 +135,23 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="margin-bottom:20px;color:#FF4081;">
+                
+                    <div class="col-md-3">
+                        <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
+                        --><h3 style="position:relative;top:-9px;text-align:right;">Want more reasons</h3></div>
+                <div class="col-md-7"> <input type="button" value="Search Nearby Attractions" class="btn searchBtn" id="search_nearby_button" style="width:100%"> 
+                    </div>
+                   <div class="col-md-2"><h3 style="position:relative;top:-9px;">to your hotel.</h3></div>
+               
+            </div>
+            <div class="row" id="nearby-results"></div>
         </div>
         <br>
         <div class="jumbotron" style="background: #7e4b62;position: relative;margin-top: -30px;">
             <!-- Example row of columns -->
             <div class="row" style="text-align: center">
-                <img src="bootstrap/images/Promo_page.png">
+                <img src="bootstrap/images/Promo_page_2.png">
             </div>
         </div> <!-- /container -->
         
@@ -160,17 +171,28 @@
         <script src="js/jquery.geocomplete.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
-            $("#location").geocomplete();
+            $("#location").geocomplete().bind("geocode:result", function(event, result){
+                var places = result.formatted_address.split(",");
+                $("#user_destination").attr("placeholder", "Where you are going in "+places[0]);
+                $("#user_source").attr("placeholder", "Where you friend/relatives in "+places[0]);
+          });
 
             
-            $("#location").change(function(){
-                var place = $("#location").val();
-                console.log(place);
-                $("#user_destination").attr("placeholder", "Where you are going in "+place);
+            $("#location").blur(function(){
+                
             });
 
             $("#user_source").geocomplete();
             $("#user_destination").geocomplete();
+            $("#search_nearby_button").click(function(){
+               service = new google.maps.places.PlacesService(map);
+               service.nearbySearch(request, callback);
+                
+            });
+            
+            function callback(results, status) {
+                console.log(results);
+            }
         </script>
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
