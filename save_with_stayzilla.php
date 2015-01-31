@@ -105,7 +105,7 @@
                                         <tr>
                                             <td class="center-align"><i class="fa fa-clock-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">You spend 2 hours</td>
-                                            <td class="align-vertical center-align">You spend 1 hours</td>
+                                            <td class="align-vertical center-align">You spend 1 hour</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-inr" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
