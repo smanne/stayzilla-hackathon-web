@@ -62,7 +62,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 style="text-align: center;font-family: sans-serif;font-weight: normal">Please do fill your requirement</h1>
+                <h1 style="text-align: center;font-family: sans-serif;font-weight: normal">Please fill in following details to know how you can save with stayzilla</h1>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
 
@@ -73,14 +73,12 @@
                             </li>
                             <li class="stayDetailsSec ">
                                 <input type="text"  placeholder="Planning to stay at" id="checkin" autocomplete="off" class="">
-                                <span class="calendarIcon"><i class="sp_icon sp_calendar"></i></span>
                             </li>
                             <li class="purposeVisit">
-                                <input type="text"  placeholder="Purpose Of Visit" id="checkout" autocomplete="off" class="">
-                                <span class="calendarIconTwo"><i class=""></i></span>
+                                <input type="text"  placeholder="Which place you are going to in " id="checkout" autocomplete="off" class="">
                             </li>
                             <li class="pull-left">
-                                <input type="button" value="SEARCH" class="btn searchBtn" id="search_button">
+                                <input type="button" value="Show my savings" class="btn searchBtn" id="search_button">
                             </li>
                         </ul>
                         <!-- END FORM-->
