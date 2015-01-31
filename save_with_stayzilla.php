@@ -17,7 +17,7 @@
         <link href="bootstrap/css/custom-style.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="jumbotron.css" rel="stylesheet">
+
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -46,9 +46,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
+
                         <li><a href="http://www.stayzilla.com/contactus">Contact Us</a></li>
                         <li><a href="http://www.stayzilla.com/aboutus">About Us</a></li>
-
+                        <li><a href="save_with_stayzilla.php#devoloped_by">Devoloped By</a></li>
                     </ul>
 
                 </div>
@@ -86,7 +87,7 @@
         <div class="container" style="margin-bottom:30px">
             <div class="row">
                 <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
-                                Benifits of Using Stayzilla
+                    Benifits of Using Stayzilla
                 </div>
                 <div class="col-md-12">
                     <div class="col-md-3 col-xs-12 box-description">
@@ -98,7 +99,7 @@
                             <li><i class="fa fa-check"></i><span>Don't depend on anyone</span></li>
                         </ul>
                     </div>
-                     <div class="col-md-3 col-xs-12 box-description">
+                    <div class="col-md-3 col-xs-12 box-description">
                         <div class="icon-header-logo" style="margin-top:10px">
                             <i class="fa fa-clock-o" style=""></i>
                         </div>
@@ -107,7 +108,7 @@
                             <li><i class="fa fa-check"></i><span>Suggests economic mode of transportation</span></li>
                         </ul>
                     </div>
-                     <div class="col-md-3 col-xs-12 box-description">
+                    <div class="col-md-3 col-xs-12 box-description">
                         <div class="icon-header-logo" style="margin-top:10px">
                             <i class="fa fa-ambulance" style=""></i>
                         </div>
@@ -116,13 +117,12 @@
                             <li><i class="fa fa-check"></i><span>Ensures your security</span></li>
                         </ul>
                     </div>
-                     <div class="col-md-3 col-xs-12 box-description">
+                    <div class="col-md-3 col-xs-12 box-description">
                         <div class="icon-header-logo" style="margin-top:10px">
                             <i class="fa fa-eye" style=""></i>
                         </div>
                         <ul class="feature-list">
                             <li><i class="fa fa-check"></i><span>Maintain your privacy</span></li>
-                           
                         </ul>
                     </div>
                 </div>
@@ -206,6 +206,43 @@
             </div>
         </div> <!-- /container -->
 
+        
+        <div class="container">
+            <div class="row" id="devoloped_by">
+                <img src="bootstrap/images/blackhack.png" style="text-align: center">
+                <div class="col-lg-4" style="text-align: center">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                   
+                </div>
+                <div class="col-lg-4" style="text-align: center">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                
+                </div>
+                <div class="col-lg-4" style="text-align: center">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                  
+                </div>
+                <div class="col-lg-6" style="text-align: center">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    
+                </div>
+                <div class="col-lg-6" style="text-align: center">
+                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                   
+                </div>
+            </div>
+
+        </div>
         <hr>
         <div class="container">
 
