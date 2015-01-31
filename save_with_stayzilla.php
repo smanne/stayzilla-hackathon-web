@@ -219,22 +219,22 @@
                     <h3>The Black Hat</h3>
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/sandeep.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/sandeep.png" alt="Sandeep image" style="width: 140px; height: 140px;">
                     <h2>Sandeep Manne</h2>
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/swapnil.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/swapnil.png" alt="Swapnil image" style="width: 140px; height: 140px;">
                     <h2>Swapnil Patil</h2>
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/kiran.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/kiran.png" alt="Kiran image" style="width: 140px; height: 140px;">
                     <h2>Kiran Juikar</h2>
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/abhilash.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/abhilash.png" alt="Abhilash image" style="width: 140px; height: 140px;">
                     <h2>Abhilash Bhattacharya</h2>
                    
                 </div>
@@ -244,8 +244,8 @@
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-                    <h2>Abhijith Sarkar</h2>
+                    <img class="img-circle" src="bootstrap/images/abhijith.png" alt="Abhijeeh image" style="width: 140px; height: 140px;">
+                    <h2>Abhijeet Shekhar</h2>
                     
                 </div>
             </div>
