@@ -77,13 +77,13 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="result" style="display:none;">
+        <div class="container" id="result" style="display:;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption" style="color:#f93f81;font-size: 19px;text-align: center;margin-bottom: 10px">
-                                Benifits of using the Stayzilla App
+                                Benifits of Stayzilla
                             </div>
 
                         </div>
