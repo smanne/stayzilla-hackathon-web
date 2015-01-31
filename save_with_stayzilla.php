@@ -59,14 +59,14 @@
 
                         <ul class="filter-list">
                             <li class="queryTextBoxSec">
-                                <input type="text" id="location" placeholder="Which city you are going?" class="searchQuery textBoxBig fadeIn">
+                                <input type="text" id="location" placeholder="Which city are you going?" class="searchQuery textBoxBig fadeIn">
                                 <span class="locationIcon"><i class="sp_icon sp_map_marker"></i></span>
                             </li>
                             <li class="stayDetailsSec ">
-                                <input type="text"  placeholder="Where is your friend/relatives" id="user_source" class="">
+                                <input type="text"  placeholder="Where does you friend/relatives reside?" id="user_source" class="">
                             </li>
                             <li class="purposeVisit">
-                                <input type="text"  placeholder="Which place you are going in " id="user_destination" class="">
+                                <input type="text"  placeholder="Which place are you going for? " id="user_destination" class="">
                             </li>
                             <li class="pull-left">
                                 <input type="button" value="Show my benefits" class="btn searchBtn" id="search_button">
