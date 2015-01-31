@@ -21,16 +21,22 @@ and open the template in the editor.
     float: left
 }
 .queryTextBoxSec input{
-    min-width: 250px;padding:10px
+    min-width: 250px;padding:10px;
 }
 .stayDetailsSec input{
-    min-width: 250px;padding:10px
+    min-width: 275px;padding:10px;
 }
 .purposeVisit input{
-     min-width: 250px;padding:10px
+     min-width: 275px;padding:10px;
 }
 .searchBtn{
     background:#f93f81;
     border-color: 1px solid #fff;
-    color:white;padding:10px
+    color:white;padding:11px;left:1px;position: relative;border-radius: 0px !important;
+}
+.align-vertical{
+    vertical-align: inherit !important;
+}
+.center-align{
+    text-align: center !important;
 }
