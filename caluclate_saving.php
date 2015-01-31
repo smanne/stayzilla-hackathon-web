@@ -6,6 +6,7 @@
 //Calcuate fare
 //return 
 //hotel price
+
 header('Content-Type: application/json');
 
 include("geo_calculator.php");
@@ -15,6 +16,7 @@ $destination = $_GET['destination'];
 //var_dump($destination);die;
 
 echo getSaving($source, $destination);
+
 function getSaving($source, $destination){
     $data = getDistance($source, $destination);
     $fare = calculateFare($data["distance"]);
@@ -22,7 +24,9 @@ function getSaving($source, $destination){
     
     $start_date = "06/03/2015";
     $end_date = "09/03/2015";
-    $hotelPrice = getStayzillahotel($destination, $start_date, $end_date);
+    $geoCordinates = get_lat_long($destination);
+
+    $hotelPrice = getStayzillahotel($geoCordinates[0], $geoCordinates[1], $start_date, $end_date);
     
     $Price = $hotelPrice->hotels[0]->price;
     $stayzillaSource = $hotelPrice->hotels[0]->address;
@@ -43,4 +47,18 @@ function getSaving($source, $destination){
     
     return json_encode($responceData);
 }
+
+function get_lat_long($address){
+
+    $address = str_replace(" ", "+", $address);
+
+    $json = file_get_contents("http://maps.google.com/maps/api/geocode/json?address=$address&sensor=false&region=$region");
+    $json = json_decode($json);
+
+    $lat = $json->{'results'}[0]->{'geometry'}->{'location'}->{'lat'};
+    $long = $json->{'results'}[0]->{'geometry'}->{'location'}->{'lng'};
+    return array($lat, $long);
+}
+
+
 ?>

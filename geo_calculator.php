@@ -27,15 +27,16 @@ function minToHours($mins) {
     }
     } 
 
-function getStayzillahotel($destination_address, $start_date, $end_date) {
+function getStayzillahotel($lat, $lng, $start_date, $end_date) {
         $url = 'http://180.92.168.7/hotels';
         $fields = array(
-            'location' => urlencode($destination_address),
             'checkin' => urlencode($start_date),
             'checkout' => urlencode($end_date),
             'property_type' => "Hotels",
+            'lat' => $lat,
+            'lng' => $lng
         );
-
+        
 //url-ify the data for the POST
         foreach ($fields as $key => $value) {
             $fields_string .= $key . '=' . $value . '&';

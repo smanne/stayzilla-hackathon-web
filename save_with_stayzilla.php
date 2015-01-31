@@ -100,23 +100,23 @@
                                     <tbody>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-map-marker" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">You need to travel <span>20Km</span></td>
-                                            <td class="align-vertical center-align">You need to travel <span>10Km</span></td>
+                                            <td class="align-vertical center-align">You need to travel <span id="user_distance">20Km</span></td>
+                                            <td class="align-vertical center-align">You need to travel <span id="stayzilla_distance">10Km</span></td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-clock-o" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
-                                            <td class="align-vertical center-align">You will spend 2 hours travelling</td>
-                                            <td class="align-vertical center-align">You will spend 1 hours travelling</td>
+                                            <td class="align-vertical center-align">You will spend <span id="user_duration"></span> travelling</td>
+                                            <td class="align-vertical center-align">You will spend <span id="stayzilla_duration"></span> travelling</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><span><img src="bootstrap/images/cab-fare.png"></span></td>
-                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> 100 you need to spend behind cab</td>
-                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> 50  you need to spend behind cab</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> <span id="user_cabfare"></span> you need to spend behind cab</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> <span id="stayzilla_cabfare"></span>  you need to spend behind cab</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-bed" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">Depends on your relative or family member</td>
-                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> 486 you need to spend behind the hotel</td>
+                                            <td class="align-vertical center-align"><i class="fa fa-inr"></i> <span id="stayzilla_hotelFare"></span> you need to spend behind the hotel</td>
                                         </tr>
                                         <tr>
                                             <td class="center-align"><i class="fa fa-ambulance" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
@@ -183,16 +183,28 @@
             });
 
             $("#user_source").geocomplete();
-            $("#user_destination").geocomplete();
+            var destination_latitude = "";
+            $("#user_destination").geocomplete().bind("geocode:result", function(event, result){
+                console.log(result.address_components.geometry.location);
+            });
             $("#search_nearby_button").click(function(){
                service = new google.maps.places.PlacesService(map);
                service.nearbySearch(request, callback);
                 
             });
             
-            function callback(results, status) {
-                console.log(results);
-            }
+            $("#search_button").click(function(){
+                $.getJSON("caluclate_saving.php?usersource="+$("#user_source").val()+"&destination="+$("#user_destination").val(), function(data){
+                    console.log(data);
+                    $("#user_distance").html(data.user.distance);
+                    $("#stayzilla_distance").html(data.stayzilla.distance);
+                    $("#user_duration").html(data.user.duration);
+                    $("#stayzilla_duration").html(data.stayzilla.duration);
+                    $("#user_cabfare").html(data.user.cabFare);
+                    $("#stayzilla_cabfare").html(data.stayzilla.cabFare);
+                    $("#stayzilla_hotelFare").html(data.stayzilla.hotelFare);
+                })
+            })
         </script>
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
