@@ -99,7 +99,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-car" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><i class="fa fa-map-marker" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">20km you need to travel</td>
                                             <td class="align-vertical center-align">10km you need to travel</td>
                                         </tr>
@@ -109,7 +109,7 @@
                                             <td class="align-vertical center-align">You spend 1 hour</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-inr" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><span><img src="bootstrap/images/cab-fare.png"></span></td>
                                             <td class="align-vertical center-align">100 <i class="fa fa-inr"></i> you need to spend behind cab</td>
                                             <td class="align-vertical center-align">50 <i class="fa fa-inr"></i> you need to spend behind cab</td>
                                         </tr>
@@ -124,7 +124,7 @@
                                             <td class="align-vertical center-align">Insurance is provided (if applied)</td>
                                         </tr>
                                         <tr>
-                                            <td class="center-align"><i class="fa fa-home" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
+                                            <td class="center-align"><i class="fa fa-eye" style="border: 1px solid black;padding: 10px;border-radius: 23px;"></i></td>
                                             <td class="align-vertical center-align">Privacy can't be ensured</td>
                                             <td class="align-vertical center-align">Privacy is ensured</td>
                                         </tr>
