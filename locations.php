@@ -11,8 +11,6 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $city = new stdClass();
-        
         $destinationDetail = new stdClass();
         $destinationDetail->name = "Wonderla Amusement Park";
         $destinationDetail->longitude = "12.9667";
@@ -45,12 +43,11 @@ and open the template in the editor.
         $cityEvents->events = $eventsArray;
         $cityEvents->Destination = $destinationArray;
         $cityEvents->Restaurant = $restaurantArray;
-        $city->Bangalore = $cityEvents;
         
-        $city = json_encode($city);
+        $cityEvents = json_encode($cityEvents);
         
         $myfile = fopen("locationData.txt", "w") or die("Unable to open file!");
-        fwrite($myfile, $city);
+        fwrite($myfile, $cityEvents);
         fclose($myfile);
         
         //Append Date to the file...
