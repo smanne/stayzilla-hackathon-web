@@ -72,12 +72,15 @@
                             <li class="pull-left">
                                 <input type="button" value="Show my benefits" class="btn searchBtn" id="search_button">
                             </li>
+                            <li class="loading-icon" style="display:none;">
+                                <img src="http://www.stayzilla.com/images/loading.GIF" style="width: 40px"></li>
                         </ul>
                         <!-- END FORM-->
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="container" id="result" style="display:none;">
             <div class="row">
                 <div class="col-md-12">
@@ -288,6 +291,7 @@
             $("#search_button").click(function(){
                 $("#result").hide();
                 $("#no-result").hide();
+                $(".loading-icon").show();
                 $.getJSON("caluclate_saving.php?usersource="+$("#user_source").val()+"&destination="+$("#user_destination").val(), function(data){
                     console.log(data);
                     $("#user_distance").html(data.user.distance);
@@ -302,7 +306,7 @@
                     $("#user_cabfare").html(data.user.cabFare);
                     $("#stayzilla_cabfare").html(data.stayzilla.cabFare);
                     $("#stayzilla_hotelFare").html(data.stayzilla.hotelFare);
-                    
+                    $(".loading-icon").hide();
                 })
             })
         </script>
