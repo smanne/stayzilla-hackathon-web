@@ -55,7 +55,7 @@
         <div class="jumbotron">
             <div class="container">
                 <h2 style="text-align: center;font-family: sans-serif;font-weight: normal">Why depend on friends/relatives when you can get benefits of Stayzilla !!!</h2>
-                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Fill all your details below</h3>
+                <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Fill details below to know how</h3>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
 
@@ -85,7 +85,7 @@
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
-                                Check out a Live Scenario
+                                Here is your Deal!!
                             </div>
 
                         </div>
@@ -236,12 +236,10 @@
 
             $("#user_source").geocomplete();
             $("#user_destination").geocomplete();
-            $("#search_nearby_button").click(function () {
-                service = new google.maps.places.PlacesService(map);
-                service.nearbySearch(request, callback);
 
-            });
-
+            $("#search_nearby_button").click(function(){
+                window.open("https://www.google.com/maps/search/?q=Attractions%20loc:"+$("#user_destination").val(), '_blank');
+            })
             
             $("#search_button").click(function(){
                 $("#result").hide();
