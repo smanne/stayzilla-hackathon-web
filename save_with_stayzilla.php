@@ -242,7 +242,7 @@
                    
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/moin.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                     <h2>Moinuddin Sheriff</h2>
                     
                 </div>
