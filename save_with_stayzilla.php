@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
         <link rel="stylesheet" href="bootstrap/font-awesome-4.3.0/css/font-awesome.min.css"
-              <title>Jumbotron Template for Bootstrap</title>
+             
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     <body>
 
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top" style="opacity: 0.8">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -58,9 +58,8 @@
                 <h3 style="text-align: center;font-family: sans-serif;font-weight: normal">Fill details below to know how</h3>
                 <div class="portlet-body form">
                     <div class="col-md-12" style="text-align: center">
-
                         <ul class="filter-list">
-                            <li class="queryTextBoxSec">
+                            <li class="headingTo">
                                 <input type="text" id="location" placeholder="Which city are you going?" class="searchQuery textBoxBig fadeIn">
                                 <span class="locationIcon"><i class="sp_icon sp_map_marker"></i></span>
                             </li>
@@ -75,6 +74,50 @@
                             </li>
                         </ul>
                         <!-- END FORM-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom:30px">
+            <div class="row">
+                <div class="caption" style="color:#f93f81;font-size: 25px;text-align: center;margin-bottom: 10px">
+                    Benifits of Using Stayzilla
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-inr" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Very cost effective</span></li>
+                            <li><i class="fa fa-check"></i><span>Don't depend on anyone</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-clock-o" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Saves a lot of time</span></li>
+                            <li><i class="fa fa-check"></i><span>Suggests various events and economic mode of transportation</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-ambulance" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Covers your accidental damage </span></li>
+                            <li><i class="fa fa-check"></i><span>Ensures your security</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 box-description">
+                        <div class="icon-header-logo" style="margin-top:10px">
+                            <i class="fa fa-eye" style=""></i>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fa fa-check"></i><span>Maintain your privacy</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -139,12 +182,12 @@
             </div>
             <div class="row" style="margin-bottom:20px;color:#FF4081;">
 
-                <div class="col-md-3">
+                <div class="col-md-3" style="text-align: center">
                     <!--<input type="text" placeholder="Check out some interesting places near to your area?" style="width:100%;padding:10px">
-                    --><h3 style="position:relative;top:-9px;text-align:right;font-size: 16px">Want more reason to chose us?</h3></div>
-                <div class="col-md-7"> <input type="button" value="Search Nearby Attractions" class="btn searchBtn" id="search_nearby_button" style="width:100%"> 
+                    --><h3 style="position:relative;top:-9px;font-size: 16px">Want more reason to chose us?</h3></div>
+                <div class="col-md-7"> <input type="button" value="Search Nearby Attractions" class="btn searchBtn" id="search_nearby_button" style="width:100%;background: #fff"> 
                 </div>
-                <div class="col-md-2"><h3 style="position:relative;top:-9px;font-size: 16px">to your hotel.</h3></div>
+                <div class="col-md-2" style="text-align: center"><h3 style="position:relative;top:-9px;font-size: 16px">to your hotel.</h3></div>
 
             </div>
             <div class="row" id="nearby-results"></div>
@@ -175,22 +218,22 @@
                     <h3>The Black Hat</h3>
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/sandeep.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/sandeep.png" alt="Sandeep image" style="width: 140px; height: 140px;">
                     <h2>Sandeep Manne</h2>
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/swapnil.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/swapnil.png" alt="Swapnil image" style="width: 140px; height: 140px;">
                     <h2>Swapnil Patil</h2>
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/kiran.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/kiran.png" alt="Kiran image" style="width: 140px; height: 140px;">
                     <h2>Kiran Juikar</h2>
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="bootstrap/images/abhilash.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <img class="img-circle" src="bootstrap/images/abhilash.png" alt="Abhilash image" style="width: 140px; height: 140px;">
                     <h2>Abhilash Bhattacharya</h2>
                    
                 </div>
@@ -200,8 +243,8 @@
                     
                 </div>
                 <div class="col-lg-4" style="text-align: center">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-                    <h2>Abhijith Sarkar</h2>
+                    <img class="img-circle" src="bootstrap/images/abhijith.png" alt="Abhijeeh image" style="width: 140px; height: 140px;">
+                    <h2>Abhijeet Shekhar</h2>
                     
                 </div>
             </div>

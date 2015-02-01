@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : Jan 31, 2015, 3:55:18 PM
-    Author     : abmon
+    Author     : The Blackhat
 */
 
 .logo-stayzilla{
@@ -27,23 +27,23 @@ and open the template in the editor.
     list-style-type: none;
     color:#f93f81;
     margin-bottom: 9px;
-    
+
 }
 .icon-header-logo{
     text-align: center;
     font-size: 30px
 }
-.queryTextBoxSec input{
-    min-width: 250px;padding:10px;
+.headingTo input{
+    min-width: 275px;padding:10px;
 }
 .stayDetailsSec input{
     min-width: 275px;padding:10px;
 }
 .purposeVisit input{
-     min-width: 275px;padding:10px;
+    min-width: 275px;padding:10px;
 }
 .searchBtn{
-    background:#fff;
+    background:#eee;
     border-color: 1px solid #fff;
     color:white;
     padding:11px;
@@ -51,12 +51,13 @@ and open the template in the editor.
     position: relative;
     border-radius: 0px !important;
     border-color: #f93f81;
-    color:#f93f81;transition: all .5s linear;
+    color:#f93f81;
+    transition: all .5s linear;
 }
 .searchBtn:hover{
-    background:#f93f81;
-    color:#fff;
-   // transition-delay:.5s;
+    background:#f93f81 !important;
+    color:#fff !important;
+    // transition-delay:.5s;
 }
 .align-vertical{
     vertical-align: inherit !important;
@@ -66,10 +67,10 @@ and open the template in the editor.
 }
 .box-description{
     box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
--moz-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
--o-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
--webkit-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
-height: 130px;
+    -moz-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+    -o-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+    -webkit-box-shadow: inset 0 0 1em #fff,0 0 1em #c8c8c8;
+    height: 130px;
 }
 
 #user_cabfare,#user_duration,#user_distance{
