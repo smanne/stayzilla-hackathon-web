@@ -7,7 +7,7 @@
  */
 
 //This example is a sample video upload stored in parse
-
+echo $r;
     $parse = new parseObject('Videos');
     $parse->title = $data['upload_data']['title'];
     $parse->description = $data['upload_data']['description'];
@@ -23,3 +23,5 @@
     //create acl
     $parse->ACL = array("*" => array("write" => true, "read" => true));
     $r = $parse->save();
+    
+    echo $r;
